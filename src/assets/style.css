@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,200,0..1,-25..0');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --spacing-0: 0px;
+    --spacing-1: 4px;
+    --spacing-2: 8px;
+    --spacing-4: 16px;
+    --spacing-8: 32px;
+    --spacing-12: 48px;
+    --spacing-16: 64px;
+    --spacing-20: 80px;
+    --spacing-24: 96px;
+    --spacing-32: 128px;
+    --spacing-40: 160px;
+    --spacing-48: 192px;
+    --spacing-64: 256px;
+    --spacing-80: 320px;
+    --spacing-96: 384px;
+
+    --radius-none: 0;
+    --radius-sm: 0.125rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+    --radius-full: 9999px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'wght' 200, 'opsz' 24;
+  display: inline-block;
+  line-height: 1;
+}
+
+@layer base {
+  html, body, #app {
+    @apply bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100;
+  }
+}
